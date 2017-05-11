@@ -1,0 +1,16 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+ 
+import:
+    title: shiv.enrollform::Import entries
+    modelClass: Shiv\EnrollForm\Models\SubscriberImport
+    list: $/shiv/enrollform/models/subscriber/columns.yaml
+    redirect: shiv/enrollform/subscribers
+ 
+export:
+    title: shiv.enrollform::Export entries
+    modelClass: Shiv\EnrollForm\Models\SubscriberExport
+    list: $/shiv/enrollform/models/subscriber/columns.yaml
+    redirect: shiv/enrollform/subscribers
+    # useList: true

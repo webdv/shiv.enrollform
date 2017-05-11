@@ -1,0 +1,4 @@
+1.0.1: First version of EnrollForm
+1.0.2:
+    - Create the subscriber table
+    - create_subscribers_table.php

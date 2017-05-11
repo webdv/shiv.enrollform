@@ -1,0 +1,31 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+    first_name:
+        label: First Name
+        disabled: true
+    last_name:
+        label: Last Name
+        disabled: true        
+    email:
+        label: Email
+        disabled: true        
+    phone:
+        label: Phone
+        disabled: true        
+    interested_in:
+        label: Interested in
+        disabled: true        
+    is_subscriber:
+        label: Subscriber
+        disabled: true
+    comment:
+        label: Comment
+        type: Text
+                                    
+

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Subscriber
+
+# Model Form Field configuration
+form: $/shiv/enrollform/models/subscriber/fields.yaml
+
+# Model Class name
+modelClass: Shiv\EnrollForm\Models\Subscriber
+
+# Default redirect location
+defaultRedirect: shiv/enrollform/subscribers
+
+# Create page
+create:
+    title: Create Subscriber
+    redirect: shiv/enrollform/subscribers/update/:id
+    redirectClose: shiv/enrollform/subscribers
+
+# Update page
+update:
+    title: Edit Subscriber
+    redirect: shiv/enrollform/subscribers
+    redirectClose: shiv/enrollform/subscribers
+
+# Preview page
+preview:
+    title: Preview Subscriber
