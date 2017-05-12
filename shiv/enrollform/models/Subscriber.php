@@ -1,27 +1,22 @@
 <?php namespace Shiv\EnrollForm\Models;
 
 use Model;
+use Illuminate\Support\MessageBag;
 
 /**
  * Subscriber Model
  */
 class Subscriber extends Model
 {
+    use \October\Rain\Database\Traits\Validation;
     /**
      * @var string The database table used by the model.
      */
     public $table = 'shiv_enrollform_subscribers';
 
-    public $rules = [
-    'first_name'                    => 'required|between:4,16',
-    'last_name'                     => 'between:4,16',
-    'email'                         => 'required|email',
-    'phone'                         => 'required|numeric',
-    'interested_in'                 => 'required|between:4,32',
-    'is_subscriber'                 => 'boolean',
-    'comment'                       => 'between:2,32',
-    ];    
-
+    public $rules = [];    
+    
+    // protected $validator = Validator::make(Input::all(), $rules);
     /**
      * @var array Guarded fields
      */
